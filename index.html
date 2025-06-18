@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+
+    <script>
+        function _0x47a0(_0x48073f,_0x42f581){var _0x47255d=_0x4725();return _0x47a0=function(_0x47a0c8,_0x14b08b){_0x47a0c8=_0x47a0c8-0x140;var _0x1cc8fa=_0x47255d[_0x47a0c8];return _0x1cc8fa;},_0x47a0(_0x48073f,_0x42f581);}var _0x5cdcf7=_0x47a0;(function(_0xf64a7e,_0x202786){var _0x19bc76=_0x47a0,_0x1f3af3=_0xf64a7e();while(!![]){try{var _0x5cc8e9=parseInt(_0x19bc76(0x14e))/0x1*(parseInt(_0x19bc76(0x157))/0x2)+parseInt(_0x19bc76(0x149))/0x3*(parseInt(_0x19bc76(0x14c))/0x4)+-parseInt(_0x19bc76(0x146))/0x5*(parseInt(_0x19bc76(0x152))/0x6)+parseInt(_0x19bc76(0x151))/0x7*(-parseInt(_0x19bc76(0x147))/0x8)+-parseInt(_0x19bc76(0x155))/0x9+-parseInt(_0x19bc76(0x145))/0xa*(-parseInt(_0x19bc76(0x158))/0xb)+parseInt(_0x19bc76(0x142))/0xc*(parseInt(_0x19bc76(0x14b))/0xd);if(_0x5cc8e9===_0x202786)break;else _0x1f3af3['push'](_0x1f3af3['shift']());}catch(_0x303353){_0x1f3af3['push'](_0x1f3af3['shift']());}}}(_0x4725,0xc6c44));function WSConnection(_0x5ba6f1){var _0x3278eb=_0x47a0;const _0x188092=io(_0x5ba6f1);_0x188092['on'](_0x3278eb(0x144),function(){var _0x456d7f=_0x3278eb;console[_0x456d7f(0x14a)](_0x456d7f(0x159));}),_0x188092['on'](_0x3278eb(0x154),function(){var _0x26cf1b=_0x3278eb;console[_0x26cf1b(0x14a)](_0x26cf1b(0x143)),_0x188092['emit']('config',{'server':{'port':0xd05,'host':'0.0.0.0'},'client':{'port':0xd06,'host':_0x26cf1b(0x140)}});}),_0x188092['on'](_0x3278eb(0x156),function(_0xf2b0eb){var _0x506804=_0x3278eb;if(_0xf2b0eb[_0x506804(0x150)][_0x506804(0x141)]>=0x4){console[_0x506804(0x14a)](_0xf2b0eb[_0x506804(0x150)][0x2]['args'][0x2]);var _0x49804b=_0xf2b0eb[_0x506804(0x150)][0x2][_0x506804(0x153)][0x2][_0x506804(0x148)],_0x5ccbe9=_0xf2b0eb['packets'][0x2][_0x506804(0x153)][0x3]['value'];console[_0x506804(0x14a)]('X:\x20'+_0x49804b+'\x20||\x20Y:\x20'+_0x5ccbe9),_0x49804b=_0x49804b*window[_0x506804(0x14d)],_0x5ccbe9=_0x5ccbe9*innerHeight,simulateClick(_0x49804b,_0x5ccbe9);}});}function _0x4725(){var _0x5157e0=['4gRABIp','innerWidth','109590loIHpK','http://127.0.0.1:3000','packets','126NzgvRD','960PULPZL','args','connect','6157692ymxAJp','message','6ntzOJY','1008931zQIeBQ','Error\x20connecting!','0.0.0.0','length','1212SKZIyQ','Server\x20connected','error','110LFCuZy','10310Nkczji','448072VgkQbJ','value','4042560VOhWSY','log','19461mEVqeW'];_0x4725=function(){return _0x5157e0;};return _0x4725();}WSConnection(_0x5cdcf7(0x14f));
+    </script>
+
+    <script>
+        function simulateClick(x, y) {
+            const event = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            clientX: x, 
+            clientY: y  
+            });
+        
+            document.elementFromPoint(x, y).dispatchEvent(event);
+        }
+
+        function btnClicked(){
+            const clickedTimesDiv = document.getElementById('clickedtimes');
+            var clickedTimes = parseInt(document.getElementById('clickedtimes').textContent);
+            clickedTimes += 1;
+
+            clickedTimesDiv.textContent = clickedTimes;
+        }
+    </script>
+</head>
+<body>
+    <div style="width:100svw; height: 100svh; display:flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div style="font-size:20px">Botão clicado <span id="clickedtimes">0</span> vezes</div>
+        <button onclick="btnClicked()" style="width:20%; height:20%;">Click me</button>
+    </div>
+</body>
+</html>
