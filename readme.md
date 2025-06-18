@@ -4,9 +4,7 @@
     - Antes de iniciar, certifique-se de que o Node.js está instalado em sua máquina.
 
 <h2> 🛠️ Instalação</h2>
-    - Clone este repositório (caso ainda não tenha feito isso)
-
-    - Instale as dependências do projeto com o npm:
+    - Clone este repositório (caso ainda não tenha feito isso) e instale as dependências:
 
     - npm install
     
