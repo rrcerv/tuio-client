@@ -12,6 +12,8 @@
     
 <h2>Execução</h2>
     - Após a instalação das dependências, execute o servidor com o seguinte comando:
+    
+    - node server.js
 
 <h2>Utilização</h2>
     - Com o servidor rodando:
